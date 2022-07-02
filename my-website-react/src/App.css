@@ -1,0 +1,183 @@
+:root {
+  --header-height: 60px;
+  --footer-height: 60px;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin: 30px 200px;
+}
+
+/* style for the main content */
+main {
+  align-content: center;
+  justify-content: center;
+  margin: 0 150px;
+}
+
+/* Use flexbox to display contents in the assigned block. Default: row */
+.flex {
+  display: flex;
+}
+
+/* Make the flexbox arrange elements by column direction */
+.col {
+  flex-direction: column;
+}
+
+/* Make the block use */
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.mgr36 {
+  margin-right: 36px;
+}
+
+.mgb24 {
+  margin-bottom: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Style for the div of the logo */
+.logo {
+  width: auto;
+  font-weight: bolder;
+  font-size: 18pt;
+  font-family: monospace;
+  height: var(--header-height);
+}
+
+.menu {
+  font-family: monospace;
+  font-size: 16pt;
+  height: var(--header-height);
+}
+
+.menu li {
+  display: inline;
+  padding-inline: 0;
+  margin-inline-end: 24px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: black;
+}
+
+/* Style for the block of blog abstract */
+.blog {
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid white;
+  height: fit-content;
+  transition-property: padding;
+}
+
+.blog:active {
+  transform: translate(5px, 5px);
+}
+
+/* Style for the title in the blog abstract block */
+.blog-title {
+  font-size: 14pt;
+  font-weight: bolder;
+}
+
+/* Style for the content in the blog abstract block */
+.blog-content {
+  /*margin: 12px 0;*/
+  line-height: 200%;
+}
+
+.blog-content p {
+  margin: 0;
+}
+
+/* Style for the author and creation date in the blog abstract block */
+.blog-info {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+/* Style for the introduction block in the <Main/> component*/
+#introduction {
+  font-size: 16pt;
+  font-family: AppleGothic;
+  margin: 50px 0;
+}
+
+/* General style for the link */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.pPage-title {
+  font-family: monospace;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 0 5px;
+}
+
+table th {
+  background-color: dimgrey;
+  color: white;
+  padding: 10px 10px;
+}
+
+table tr td {
+  height: fit-content;
+  padding: 10px 10px;
+}
+
+/* Set the width of the project name column to 80% of the table width */
+.pName {
+  width: 80%;
+}
+
+/* Alternate table row color */
+tr:nth-child(odd) td {
+  background-color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #c7c7c7;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
+
+
